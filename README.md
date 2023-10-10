@@ -16,7 +16,16 @@ Application developers and architects that are looking to get into the details o
 # How do I start?
 If you are participating in this bootcamp workshop during an AWS event, follow the instructions of the instructors on site.
 
-If you would like to run through the lab exercises in a self-guided manner, all you need to do is launch the [workshop.yml](https://github.com/aws-samples/aws-saas-factory-bootcamp/blob/master/resources/workshop.yml) AWS CloudFormation template in your AWS account and then start by clicking the Lab 1 icon below.
+If you would like to run through the lab exercises in a self-guided manner,
+ you have to complete the following two prerequsites and then create a stack using the [workshop.yml](https://github.com/aws-samples/aws-saas-factory-bootcamp/blob/master/resources/workshop.yml) AWS CloudFormation template in your AWS account and then start by clicking the Lab 1 icon below.
+
+prerequisites
+- Create an S3 bucket in the region where you will be deploying the workshop.yml
+- upload the folder [resources] in the s3 bucket (https://github.com/aws-samples/aws-saas-factory-bootcamp/tree/master/resources)
+- upload the folder [source] in the s3 bucket (https://github.com/aws-samples/aws-saas-factory-bootcamp/tree/master/
+source)
+- Fill the name of the s3 bucket as be the input value for the parameter **AssetsPath** in the workshop.yml
+- ![Sample](images/creating-stack-workshop.png)
 
 Note that this workshop deploys infrastructure into your AWS account that is outside of the free tier, and you should delete the CloudFormation stack when you are finished to minimize costs. The Cognito resources and IAM roles and policies created by the onboarding system will need to be removed manually after the stack delete. 
 
